@@ -1,1 +1,1 @@
-# example apps using (bloc)[https://felangel.github.io/bloc/#/] state management library
+# example apps using bloc state management library
