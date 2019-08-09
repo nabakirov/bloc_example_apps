@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class CounterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    
     return BlocProvider<CounterBloc>(
         builder: (context) => CounterBloc(), child: CounterWidget());
   }

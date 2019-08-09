@@ -1,3 +1,5 @@
+import 'package:bloc_example_apps/pages/timer_app/timer_page.dart';
+
 import 'pages/counter_app/counter_page.dart';
 import 'package:flutter/material.dart';
 
@@ -8,11 +10,7 @@ class MyApp extends StatelessWidget {
     return PageView(
       children: <Widget>[
         CounterPage(),
-        Container(
-            color: Colors.green,
-            alignment: AlignmentDirectional.center,
-            child: Text('hello',
-                style: TextStyle(fontSize: 132.0, color: Colors.white))),
+        TimerPage(),
       ],
     );
   }
@@ -20,6 +18,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primaryColor: Color.fromRGBO(109, 234, 255, 1),
+        accentColor: Color.fromRGBO(72, 74, 126, 1),
+        brightness: Brightness.light,
+      ),
       title: 'BlocExample',
       home: pages(),
     );
