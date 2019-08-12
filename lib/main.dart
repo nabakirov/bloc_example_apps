@@ -1,3 +1,4 @@
+import 'package:bloc_example_apps/pages/infinite_list/page.dart';
 import 'package:bloc_example_apps/pages/timer_app/timer_page.dart';
 
 import 'pages/counter_app/counter_page.dart';
@@ -11,6 +12,7 @@ class MyApp extends StatelessWidget {
       children: <Widget>[
         CounterPage(),
         TimerPage(),
+        InfiniteScrollPage()
       ],
     );
   }
@@ -19,8 +21,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: Color.fromRGBO(109, 234, 255, 1),
-        accentColor: Color.fromRGBO(72, 74, 126, 1),
+        // primaryColor: Color.fromRGBO(109, 234, 255, 1),
+        // accentColor: Color.fromRGBO(72, 74, 126, 1),
         brightness: Brightness.light,
       ),
       title: 'BlocExample',
